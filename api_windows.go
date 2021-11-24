@@ -62,13 +62,13 @@ func Init() error {
 		return err
 	}
 
-	show_cursor(false)
-	term_size, _ = get_term_size(out)
-	back_buffer.init(int(term_size.x), int(term_size.y))
-	front_buffer.init(int(term_size.x), int(term_size.y))
-	back_buffer.clear()
-	front_buffer.clear()
-	clear()
+	// show_cursor(false)
+	// term_size, _ = get_term_size(out)
+	// back_buffer.init(int(term_size.x), int(term_size.y))
+	// front_buffer.init(int(term_size.x), int(term_size.y))
+	// back_buffer.clear()
+	// front_buffer.clear()
+	// clear()
 
 	diffbuf = make([]diff_msg, 0, 32)
 

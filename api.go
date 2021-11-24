@@ -87,14 +87,14 @@ func Init() error {
 
 	out.WriteString(funcs[t_enter_ca])
 	out.WriteString(funcs[t_enter_keypad])
-	out.WriteString(funcs[t_hide_cursor])
+	// out.WriteString(funcs[t_hide_cursor])
 	out.WriteString(funcs[t_clear_screen])
 
-	termw, termh = get_term_size(out.Fd())
-	back_buffer.init(termw, termh)
-	front_buffer.init(termw, termh)
-	back_buffer.clear()
-	front_buffer.clear()
+	// termw, termh = get_term_size(out.Fd())
+	// back_buffer.init(termw, termh)
+	// front_buffer.init(termw, termh)
+	// back_buffer.clear()
+	// front_buffer.clear()
 
 	go func() {
 		buf := make([]byte, 128)
